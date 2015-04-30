@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="A simple example of how Javascript can manipulate DOM.">
+    	<meta name="keywords" content="General Assembly, Javascript, JS">
+		<meta property="og:title" content="ShareThis Homepage" />
+        <meta property="og:type" content="Sharing Widgets" />
+        <meta property="og:url" content="http://sharethis.com" />
+        <meta property="og:image" content="http://sharethis.com/images/logo.jpg" />
+        <meta property="og:description" content="Sharing is great!" />
+        <meta property="og:site_name" content="ShareThis" />
+
+		<title>Video</title>
+
+		<!-- external CSS link -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div id="container">
+			<video src="http://vjs.zencdn.net/v/oceans.mp4" controls autoplay></video>
+			<div class="modal">
+				<div class="close"></div>
+				<div class="social">
+					<h3>Share This Video</h3>
+					<span class="st_sharethis_large"  st_url="http://sharethis.com" st_title="Sharing is great!" displayText="ShareThis"></span>
+					<span class="st_facebook_large"  st_url="http://sharethis.com" st_title="Sharing is great!" displayText="Facebook"></span>
+					<span class="st_twitter_large"  st_url="http://sharethis.com" st_title="Sharing is great!" displayText="Tweet"></span>
+					<span class="st_linkedin_large"  st_url="http://sharethis.com" st_title="Sharing is great!" displayText="LinkedIn"></span>
+					<span class="st_pinterest_large"  st_url="http://sharethis.com" st_title="Sharing is great!" displayText="Pinterest"></span>
+					<span class="st_email_large"  st_url="http://sharethis.com" st_title="Sharing is great!" displayText="Email"></span>
+				</div>
+			</div>
+		</div><!-- #container -->
+		<script type="text/javascript">var switchTo5x=true;</script>
+		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script type="text/javascript">stLight.options({publisher: "8a84f01b-ebce-4d4d-a01a-f7b9423bf8ad", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+		<script src="js/modal.js"></script>
+		<script src="js/video.js"></script>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #EFEFEF;
+     font-size: 16px;
+     line-height: 1.4;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+     width: 100%;
+     height:100%;
+     margin: 0;
+     padding: 0;
+}
+
+h3 {
+    font-size:2em;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+   position:absolute;
+   width:100%;
+   height:100%;
+   background: #121212;
+   z-index:0;
+}
+
+video {
+
+    position:relative;
+    left:50%;
+    width:720px;
+    height:405px;
+    margin-left: -360px;
+    margin-top: 12%;
+}
+
+canvas {
+    width:100%;
+    height:100%;
+}
+
+.modal {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(10,10,10,0.8);
+    color: rgba(255,255,255,1.0);
+    text-align:center;
+    opacity:0;
+    transition: opacity 1.8s;
+    display:none;
+    z-index:100;
+}
+
+.modal .social {
+
+    position:relative;
+    top:50%;
+    margin-top:-40px;
+
+}
+
+.modal .social h3 {
+    padding-bottom:20px;
+}
+
+.close {
+    position: absolute;
+    top:0;
+    right:0;
+    width:50px;
+    height:50px;
+    background: url('../img/close.svg');
+    background-size: contain;
+    opacity:0.8;
+    margin:10px;
+    z-index:100;
+}
+.close:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
